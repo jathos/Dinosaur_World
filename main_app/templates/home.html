@@ -5,4 +5,14 @@
 <h1>Welcome to Dinosaur World!</h1>
 <h2>Your one-stop shop for all the dinosaurs you've ever seen</h2>
 
+<h1>Dino List</h1>
+{% for dino in dinosaurs %}
+<div>
+    <h1>{{ dino.species }}</h1>
+    <h4>{{ dino.group }}</h4>
+    <h4>{{ dino.diet }}</h4>
+</div>
+{% endfor %}
+
+
 {% endblock %}
